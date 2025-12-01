@@ -8,14 +8,18 @@
 <body>
     <script>
         function getComputerChoice(){
-            let x = Math.floor(Math.random() * 3);
+            let computerChoice = Math.floor(Math.random() * 3);
 
-            if(x == 0)  
-                console.log('Rock')
-            else if(x == 1)
-                console.log('Paper')
+            if(computerChoice == 0)  
+                return 'Rock'
+            else if(computerChoice == 1)
+                return 'Scissor'
             else
-                console.log('Scissor')
+                return 'Paper'
+        }
+        function getHumanChoice(){
+            let humanChoice = prompt('Enter Rock, Paper or Scissor: ');
+            return humanChoice
         }
     </script>
 </body>
